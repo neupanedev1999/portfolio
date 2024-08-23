@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll from animations */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    position: relative;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation for header */
+}
+
+header h1 {
+    margin: 0;
+}
+
+.contact-info {
+    margin-top: 0.5rem;
+}
+
+.contact-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+    display: inline-block;
+    transition: transform 0.3s ease; /* Animation on hover */
+}
+
+.contact-link i {
+    margin-right: 0.5rem;
+}
+
+.contact-link:hover {
+    transform: scale(1.1); /* Enlarge slightly on hover */
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Start hidden for fade-in effect */
+    transform: translateY(30px); /* Start slightly below */
+    transition: all 0.5s ease-out; /* Transition for scroll-triggered animation */
+}
+
+section.active {
+    opacity: 1;
+    transform: translateY(0); /* Reset position when in view */
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #eee;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header, footer {
+        text-align: center;
+    }
+
+    .contact-link {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}

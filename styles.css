@@ -215,3 +215,17 @@ footer {
 footer p {
     margin: 0;
 }
+/* General navigation styles */
+nav a {
+    color: white; /* Or whatever color the other links are */
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #333; /* The background color for other nav links */
+    border-radius: 5px;
+}
+
+/* Styling the 'Blogs' nav button differently */
+nav a[href="blog.html"] {
+    background-color: lightgreen; /* Light green background for Blogs link */
+    color: black; /* Set a different text color for contrast */
+}

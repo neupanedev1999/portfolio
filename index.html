@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Devraj Neupane | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="hero" id="top">
+    <div class="container">
+      <img src="assets/profile.jpg" alt="Devraj Neupane" class="profile-pic" />
+
+      <h1>Devraj Neupane</h1>
+      <p class="tagline">Computing Systems (2:1) Graduate • London, UK</p>
+
+      <div class="toggle" role="tablist" aria-label="Profile focus toggle">
+        <button class="toggle-btn active" id="btn-it" onclick="showSummary('it')" type="button">IT / General</button>
+        <button class="toggle-btn" id="btn-cyber" onclick="showSummary('cyber')" type="button">Cybersecurity</button>
+      </div>
+
+      <p class="summary" id="it">
+        Computing Systems graduate with experience across IT systems, web development, and data analytics.
+        Strong communication and documentation skills, with a practical, hands-on approach to learning and problem-solving.
+      </p>
+
+      <p class="summary" id="cyber" style="display:none;">
+        Computing Systems graduate with strong cybersecurity foundations, hands-on labs (TryHackMe top 2%),
+        and security awareness. Interested in junior SOC / security analyst pathways and secure system practices.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn" href="assets/Devraj_Neupane_CV.pdf" download>Download CV</a>
+        <a class="btn ghost" href="#contact">Contact</a>
+      </div>
+
+      <div class="links-row">
+        <a href="https://www.linkedin.com/in/neupanedev" target="_blank" rel="noopener">LinkedIn</a>
+        <span>•</span>
+        <a href="#learning">SoloLearn</a>
+        <span>•</span>
+        <a href="#learning">TryHackMe</a>
+        <span>•</span>
+        <a href="#media">YouTube (UKmandu)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="section" id="projects">
+      <h2>University Projects</h2>
+      <p class="section-intro">
+        Selected academic work demonstrating structured development, documentation, and practical implementation.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Final Year Computing Systems Project</h3>
+          <p>End-to-end project involving planning, implementation, testing, and documentation.</p>
+          <ul class="bullets">
+            <li>Requirements → design → build → test</li>
+            <li>Clear technical documentation</li>
+            <li>Security-aware handling of data and access</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Data Analytics Project</h3>
+          <p>Worked with structured datasets to clean, query, and report insights.</p>
+          <ul class="bullets">
+            <li>SQL querying & analysis</li>
+            <li>Data validation & accuracy</li>
+            <li>Basic reporting for decision-making</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Web Applications Development</h3>
+          <p>Built responsive web pages and interactive features focused on usability.</p>
+          <ul class="bullets">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Forms & user interactions</li>
+            <li>Responsive layout & accessibility</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Cloud Native Development (Foundations)</h3>
+          <p>Understanding of cloud-native concepts and deployment thinking through coursework.</p>
+          <ul class="bullets">
+            <li>Cloud fundamentals</li>
+            <li>Service reliability concepts</li>
+            <li>Deployment awareness</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Networks & Communications</h3>
+          <p>Strong foundation in networking principles and connectivity troubleshooting mindset.</p>
+          <ul class="bullets">
+            <li>Networking fundamentals</li>
+            <li>Connectivity & protocols awareness</li>
+            <li>Practical problem-solving approach</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Systems Security (Awareness)</h3>
+          <p>Applied secure practices and confidentiality principles across coursework and labs.</p>
+          <ul class="bullets">
+            <li>OWASP Top 10 awareness</li>
+            <li>Access control & data protection principles</li>
+            <li>Responsible learning through labs</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="learning">
+      <h2>Learning & Labs</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>TryHackMe</h3>
+          <p>Top 2% globally • 115+ rooms completed • 19 badges.</p>
+          <div class="embed-wrap">
+            <iframe
+              src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=564603"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              style="border:none; width:100%; max-width:420px; height:260px;">
+            </iframe>
+          </div>
+          <p class="muted">Labs completed in a controlled learning environment.</p>
+        </article>
+
+        <article class="card">
+          <h3>SoloLearn</h3>
+          <p>Level 9 • 4,523 XP • Completed: Python Intermediate, HTML • In progress: Python Developer path.</p>
+          <ul class="bullets">
+            <li>Python practice & fundamentals reinforcement</li>
+            <li>HTML + web basics</li>
+            <li>Small coding exercises (Code Bits)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>HackerOne (Awareness)</h3>
+          <p>Security awareness and responsible disclosure learning (not presented as professional pentesting).</p>
+          <ul class="bullets">
+            <li>Ethical security mindset</li>
+            <li>Confidentiality & safe handling</li>
+            <li>Continuous learning since 2020</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="media">
+      <h2>Digital Media & Community Engagement</h2>
+      <div class="card">
+        <h3>UKmandu (YouTube)</h3>
+        <p>
+          Interview and community-focused content covering UK student and migrant realities.
+          Demonstrates communication, research, editing, and audience engagement.
+        </p>
+        <ul class="bullets">
+          <li>6,666 subscribers</li>
+          <li>Content planning, interviewing, publishing</li>
+          <li>Analytics awareness (CTR, watch time, performance)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p><strong>Email:</strong> <a href="mailto:neupanedev2055@gmail.com">neupanedev2055@gmail.com</a></p>
+        <p><strong>Website:</strong> <a href="https://neupanedev.com.np" target="_blank" rel="noopener">neupanedev.com.np</a></p>
+        <p class="muted">Tip: Use the toggle at the top to present IT/General or Cyber focus when sharing this site.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="#top" class="muted">Back to top ↑</a>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
